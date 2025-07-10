@@ -1,0 +1,261 @@
+/* 引入字體 */
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 全域樣式 */
+
+
+/* 顏色 */
+:root{
+    --primary-400: #57A203; /* 主色 */
+    --secondary-color: #F5FEE7; /* 次色 */
+    --text-color: #000000; /* 文字顏色 */
+    --background-color: #ffffff; /* 背景顏色 */
+    --footer-background-color: lightgray; /* 頁腳背景顏色 */
+
+    --100-color: #f8f9fa;
+    --300-color: #dee2e6;
+    --600-color: #6c657d;
+    --900-color: #212529;  /* 主色100% */
+}
+
+    /* 標籤基本樣式 */
+ /* 確保所有元素的寬高計算方式一致 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  line-height: 1.5; /* 設定行高150 */
+  letter-spacing: 0.05em; /* 設定字母間距 */
+  color: var(--900-color);
+}
+
+.hero-header {
+  color: rgb(255, 255, 255); /* 渐變色 */
+  background-image: url("hero.png");
+  background-repeat: no-repeat;/* 不重複背景圖片 */
+  background-position: center center;
+  background-size: cover; /* 設定背景圖片尺寸 */
+}
+
+.hero-opacity {
+  text-align: center;
+  padding-top: 151px;
+  padding-bottom: 151px;
+  background-color: rgba(61, 61, 61, 0.108);
+
+}
+img{
+  vertical-align: middle; /* 圖片垂直對齊 */
+}
+p{
+  font-size: 16px;
+}
+a{
+   color:var(--primary-400); /* 使用主色 */
+   text-underline-offset:8px ;/* 下劃線偏移量 */
+   display: block;
+}   
+
+/*通用樣式?? */
+
+.container{
+    width: 856px;
+    margin: 0 auto;
+    
+}
+h1{
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    font-weight: 700; /* 粗體 */
+}
+h2{
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    font-weight: 700; /* 粗體 */
+}
+h3{
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    font-weight: 700; /* 粗體 */
+}
+h4{
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    font-weight: 700; /* 粗體400 */
+}
+h5{
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    font-weight: 700; /* 粗體 */
+}
+.text-sm{
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-weight: 400; /*粗體*/
+    color: #6C757D;
+}
+.text-Primary-400{
+    color: var(--primary-400);
+    font-size: 20px;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+}
+.bg-Primary-100{
+    background-color: var(--secondary-color);
+   
+}
+
+
+
+/*調整元素與元素間的距離，向外推擠48px*/
+.mb-48{
+    margin-bottom: 48px;
+}
+.mb-4{
+    margin-bottom: 4px;
+}
+.mb-12{
+    margin-bottom: 12px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.pb-24{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.p-32{
+padding: 32px;
+}
+.pe-8{
+    padding-right: 8px;
+}
+.pe-4{
+    padding-right: 4px;
+}
+.pb-8{
+  padding-bottom: 8px;
+}
+.pb-48{
+  padding-bottom: 48px;
+}
+.py-8{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.py-64{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+/*padg*/
+.text-white{
+    color: #ffffff;
+}
+.eng-title{
+  font-size: 28px;
+
+}
+.quote{
+  border-radius: 12px;/* 圓角 */
+  text-align: center;
+}
+.photo img{
+ width:1076px;
+  margin-left: -110px;
+  margin-right: -110px;
+}
+
+.section-lined{
+  border-bottom: 1px solid var(--300-color);
+  padding-bottom: 48px;
+}
+.history{
+ border-left: 1px solid var(--900-color);
+ padding-left:8px;
+}
+.history-list{
+  list-style-type: disc; /* 使用圓點列表 */
+  padding-left: 24px; /* 調整列表項目的左側間距 */
+}
+.concept-item{
+  border-left: 3px solid var(--300-color);
+  padding-left: 12px;
+}
+.border-underline{
+  border-bottom: 1px solid var(--300-color);
+  padding-bottom: 8px;
+}
+.bi {
+   padding-right: 8px;/* 調整圖示與文字之間的間距 */
+   vertical-align: bottom; /* 確保圖示與文字對齊 */
+}
+.bg-100{
+  background-color: var(--100-color);
+  height: 174px;
+}
+.footer{
+  text-align: center;
+}
